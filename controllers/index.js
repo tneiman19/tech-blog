@@ -1,20 +1,11 @@
-const router = require("express").Router();
+const router = require('express').Router();
 
-const apiRoutes = require("./api");
-const homeRoutes = require("./homeRoutes");
-// const profileRoutes = require('./profileRoutes');
+const apiRoutes = require('./api/');
+const homeRoutes = require('./home-routes.js');
+const dashboardRoutes = require('./dashboard-routes.js');
 
-router.use("/", homeRoutes);
-// router.use('/', profileRoutes);
-router.use("/api", apiRoutes);
-
-// Fallback route for when a user attempts to visit routes that don't exist
-// router.get("*", (req, res) => {
-//   res.render("invalid-route", {
-//     logged_in: req.session.logged_in,
-//     name: req.session.name,
-//     user_id: req.session.user_id,
-//   });
-// });
+router.use('/', homeRoutes);
+router.use('/dashboard', dashboardRoutes);
+router.use('/api', apiRoutes);
 
 module.exports = router;

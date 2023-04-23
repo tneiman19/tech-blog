@@ -10,15 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tneiman19/tech-blog.git"
+    "url": "git+https://github.com/coding-boot-camp/module-14-project-mvc.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tneiman19/tech-blog/issues"
+    "url": "https://github.com/coding-boot-camp/module-14-project-mvc/issues"
   },
-  "homepage": "https://github.com/tneiman19/tech-blog#readme",
+  "homepage": "https://github.com/coding-boot-camp/module-14-project-mvc#readme",
   "dependencies": {
     "bcrypt": "^4.0.1",
     "connect-session-sequelize": "^6.1.1",
