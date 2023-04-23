@@ -1,17 +1,20 @@
-<div class="posts">
+<div class="container">
   {{#each posts}}
-  <article class="card">
-    <div class="card-header flex-row justify-space-between">
-      <h2>
-        <a href="/post/{{id}}">{{title}}</a>
-      </h2>
-      <div>
-        Posted by {{User.username}} on {{format_date createdAt}}
+    <article class="card bg-dark text-white mb-4">
+      <div class="card-body">
+        <h2 class="card-title">
+          <a href="/post/{{id}}" class="nav-link">{{title}}</a>
+        </h2>
+        <div class="card-subtitle mb-2">
+          Posted by
+          {{User.username}}
+          on
+          {{format_date createdAt}}
+        </div>
+        <div class="card-text">
+          {{body}}
+        </div>
       </div>
-    </div>
-    <div class="card-body">
-      {{body}}
-    </div>
-  </article>
+    </article>
   {{/each}}
 </div>
