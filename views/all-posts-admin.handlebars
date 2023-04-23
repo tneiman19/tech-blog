@@ -1,8 +1,13 @@
-<div class="posts list-group">
+<div class="bg-dark text-light p-3">
   {{#each posts}}
-    <a class="list-item flex-row justify-space-between" href="/dashboard/edit/{{id}}">
+    <a
+      href="/dashboard/edit/{{id}}"
+      class="d-flex justify-content-between align-items-center text-decoration-none text-light mb-2 nav-link"
+    >
       <span>{{title}}</span>
       <span>{{format_date createdAt}}</span>
     </a>
+    <hr class="bg-light" />
+
   {{/each}}
 </div>
