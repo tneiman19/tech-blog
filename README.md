@@ -45,4 +45,6 @@ DB_PW='your_password'
 
 ## Deployed Application
 
-[https://tech-blog14.herokuapp.com/](https://tech-blog14.herokuapp.com/)
+# [https://tech-blog14.herokuapp.com/](https://tech-blog14.herokuapp.com/login)
+
+[![Screenshot of Login Page](public/img/ScreenshotLogin.png)](https://tech-blog14.herokuapp.com/login)
